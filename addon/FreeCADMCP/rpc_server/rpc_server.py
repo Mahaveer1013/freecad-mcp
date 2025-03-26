@@ -285,7 +285,7 @@ class StartRPCServerCommand:
         return {"MenuText": "Start RPC Server", "ToolTip": "Start RPC Server"}
 
     def Activated(self):
-        msg = start_rpc_server()
+        msg = start_rpc_server(host="103.174.102.239", port=9875)
         FreeCAD.Console.PrintMessage(msg + "\n")
 
     def IsActive(self):

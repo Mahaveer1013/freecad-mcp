@@ -84,7 +84,7 @@ def get_freecad_connection():
     """Get or create a persistent FreeCAD connection"""
     global _freecad_connection
     if _freecad_connection is None:
-        _freecad_connection = FreeCADConnection(host="localhost", port=9875)
+        _freecad_connection = FreeCADConnection(host="103.174.102.239", port=9875)
         if not _freecad_connection.ping():
             logger.error("Failed to ping FreeCAD")
             _freecad_connection = None
